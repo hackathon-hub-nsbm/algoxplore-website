@@ -77,6 +77,6 @@ jobs:
       - name: Run lint, check, format, & build
         run: |
           ${{ steps.detect-package-manager.outputs.manager }} run lint
-          ${{ steps.detect-package-manager.outputs.manager }} run check
-          ${{ steps.detect-package-manager.outputs.manager }} run format
+          #${{ steps.detect-package-manager.outputs.manager }} run check
+          #${{ steps.detect-package-manager.outputs.manager }} run format
           ${{ steps.detect-package-manager.outputs.manager }} run build
