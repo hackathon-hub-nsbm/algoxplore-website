@@ -60,8 +60,17 @@ body {
   outline: none;
 }
 
+
+.input3 {
+  width: 252px;
+  background-color: transparent;
+  border-bottom: 1px solid #38ac38;
+  outline: none;
+}
+
 .input::placeholder,
-.input2::placeholder {
+.input2::placeholder,
+.input3::placeholder {
   color: gray;
 }
 
@@ -285,4 +294,11 @@ body {
     width: 100%;
     padding-top: 36px;
   }
+
+  .input,
+  .input2,
+  .input3 {
+    width: 100%;
+  }
+
 }
