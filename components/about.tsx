@@ -1,6 +1,7 @@
+import Art from "./art";
 export default function About() {
     return (
-      <div className="lg:pr-20">
+      <div className="lg:pr-20 border-cover">
         <p className="text underscan">
           AlgoXplore 1.0 is event organized by the []. The event is aimed at
           providing a platform for students to explore the world of algorithms and
@@ -17,6 +18,7 @@ export default function About() {
           width={500}
           height={200}
         /> */}
+        <Art tab="ALGXPLR"/>
       </div>
     );
   }
