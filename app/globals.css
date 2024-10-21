@@ -3,302 +3,339 @@
 @tailwind utilities;
 
 body {
-  background: black;
-  color: #38ac38;
-  font-family: "IBM Plex Mono", monospace;
-  font-optical-sizing: auto;
-  letter-spacing: -0.6px;
+    background: black;
+    color: #38ac38;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    letter-spacing: -0.6px;
+}
+
+*::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
 .main {
-  min-height: 100vh;
-  max-height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .terminal {
-  padding: 30px;
-  padding-top: 20px;
-  height: 93vh;
-  width: 96vw;
-  border: 1px #38ac38 dashed;
+    padding: 30px;
+    padding-top: 20px;
+    height: 93vh;
+    width: 96vw;
+    border: 1px #38ac38 dashed;
 }
 
 .header {
-  left: 60px;
-  right: 60px;
+    left: 60px;
+    right: 60px;
 }
 
 .terminal_data {
-  padding-top: 60px;
+    padding-top: 60px;
 }
 
 .terminal_right {
-  width: 66%;
+    width: 66%;
 }
 
 .menu_item {
-  padding-left: 6px;
-  width: 100px;
+    padding-left: 6px;
+    width: 100px;
 }
 
 .about_image {
-  width: 700px;
-  height: 400px;
+    width: 700px;
+    height: 400px;
 }
 
 .input {
-  width: 190px;
-  background-color: transparent;
-  border-bottom: 1px solid #38ac38;
-  outline: none;
+    width: 190px;
+    background-color: transparent;
+    border-bottom: 1px solid #38ac38;
+    outline: none;
 }
 
 .input2 {
-  width: 730px;
-  background-color: transparent;
-  border-bottom: 1px solid #38ac38;
-  outline: none;
+    width: 730px;
+    background-color: transparent;
+    border-bottom: 1px solid #38ac38;
+    outline: none;
 }
 
-
 .input3 {
-  width: 252px;
-  background-color: transparent;
-  border-bottom: 1px solid #38ac38;
-  outline: none;
+    width: 252px;
+    background-color: transparent;
+    border-bottom: 1px solid #38ac38;
+    outline: none;
 }
 
 .input::placeholder,
 .input2::placeholder,
 .input3::placeholder {
-  color: gray;
+    color: gray;
 }
-
 
 /* Animations */
 @keyframes glitch {
-  0% {
-    clip: rect(42px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    0% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  5% {
-    clip: rect(12px, 9999px, 56px, 0);
-    transform: skew(0.3deg);
-  }
+    5% {
+        clip: rect(12px, 9999px, 56px, 0);
+        transform: skew(0.3deg);
+    }
 
-  10% {
-    clip: rect(82px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    10% {
+        clip: rect(82px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  15% {
-    clip: rect(12px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    15% {
+        clip: rect(12px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  20% {
-    clip: rect(42px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    20% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  25% {
-    clip: rect(12px, 9999px, 56px, 0);
-    transform: skew(0.3deg);
-  }
+    25% {
+        clip: rect(12px, 9999px, 56px, 0);
+        transform: skew(0.3deg);
+    }
 
-  30% {
-    clip: rect(82px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    30% {
+        clip: rect(82px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  35% {
-    clip: rect(12px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    35% {
+        clip: rect(12px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  40% {
-    clip: rect(42px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    40% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  45% {
-    clip: rect(12px, 9999px, 56px, 0);
-    transform: skew(0.3deg);
-  }
+    45% {
+        clip: rect(12px, 9999px, 56px, 0);
+        transform: skew(0.3deg);
+    }
 
-  50% {
-    clip: rect(82px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    50% {
+        clip: rect(82px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  55% {
-    clip: rect(12px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    55% {
+        clip: rect(12px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  60% {
-    clip: rect(42px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    60% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  65% {
-    clip: rect(12px, 9999px, 56px, 0);
-    transform: skew(0.3deg);
-  }
+    65% {
+        clip: rect(12px, 9999px, 56px, 0);
+        transform: skew(0.3deg);
+    }
 
-  70% {
-    clip: rect(82px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    70% {
+        clip: rect(82px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  75% {
-    clip: rect(12px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    75% {
+        clip: rect(12px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  80% {
-    clip: rect(42px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    80% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  85% {
-    clip: rect(12px, 9999px, 56px, 0);
-    transform: skew(0.3deg);
-  }
+    85% {
+        clip: rect(12px, 9999px, 56px, 0);
+        transform: skew(0.3deg);
+    }
 
-  90% {
-    clip: rect(82px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    90% {
+        clip: rect(82px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  95% {
-    clip: rect(12px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    95% {
+        clip: rect(12px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 
-  100% {
-    clip: rect(42px, 9999px, 44px, 0);
-    transform: skew(0.3deg);
-  }
+    100% {
+        clip: rect(42px, 9999px, 44px, 0);
+        transform: skew(0.3deg);
+    }
 }
 
 .glitch::before,
 .glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  overflow: hidden;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    overflow: hidden;
 }
 
 .glitch::before {
-  left: 2px;
-  text-shadow: -2px 0 red;
-  clip: rect(24px, 550px, 90px, 0);
-  animation: glitch 2s infinite linear alternate-reverse;
+    left: 2px;
+    text-shadow: -2px 0 red;
+    clip: rect(24px, 550px, 90px, 0);
+    animation: glitch 2s infinite linear alternate-reverse;
 }
 
 .glitch::after {
-  left: -2px;
-  text-shadow: -2px 0 blue;
-  clip: rect(85px, 550px, 140px, 0);
-  animation: glitch 2s infinite linear alternate-reverse;
+    left: -2px;
+    text-shadow: -2px 0 blue;
+    clip: rect(85px, 550px, 140px, 0);
+    animation: glitch 2s infinite linear alternate-reverse;
 }
 
 .glitch:hover::before,
 .glitch:hover::after {
-  animation: glitch 0.3s infinite linear alternate-reverse;
+    animation: glitch 0.3s infinite linear alternate-reverse;
 }
 
 @keyframes blink {
+    from,
+    to {
+        visibility: hidden;
+    }
 
-  from,
-  to {
-    visibility: hidden;
-  }
-
-  50% {
-    visibility: visible;
-  }
+    50% {
+        visibility: visible;
+    }
 }
 
 .blinking_underscore {
-  animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
 }
 
 @keyframes glow {
-  0% {
-    text-shadow: 0 0 2px rgba(56, 172, 56, 0.8),
-      0 0 6px rgba(56, 172, 56, 0.6),
-      0 0 6px rgba(56, 172, 56, 0.4);
-  }
+    0% {
+        text-shadow:
+            0 0 2px rgba(56, 172, 56, 0.8),
+            0 0 6px rgba(56, 172, 56, 0.6),
+            0 0 6px rgba(56, 172, 56, 0.4);
+    }
 
-  50% {
-    text-shadow: 0 0 4px rgba(56, 172, 56, 1),
-      0 0 30px rgba(56, 172, 56, 0.8),
-      0 0 40px rgba(56, 172, 56, 0.6);
-  }
+    50% {
+        text-shadow:
+            0 0 4px rgba(56, 172, 56, 1),
+            0 0 30px rgba(56, 172, 56, 0.8),
+            0 0 40px rgba(56, 172, 56, 0.6);
+    }
 
-  100% {
-    text-shadow: 0 0 6px rgba(56, 172, 56, 0.8),
-      0 0 6px rgba(56, 172, 56, 0.6),
-      0 0 6px rgba(56, 172, 56, 0.4);
-  }
+    100% {
+        text-shadow:
+            0 0 6px rgba(56, 172, 56, 0.9),
+            0 0 6px rgba(56, 172, 56, 0.7),
+            0 0 6px rgba(56, 172, 56, 0.6);
+    }
 }
 
 .text {
-  animation: glow 2s infinite;
+    animation: glow 2s infinite;
 }
 
 @keyframes flicker {
+    0%,
+    100% {
+        opacity: 1;
+    }
 
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.9;
-  }
+    50% {
+        opacity: 0.6;
+    }
 }
 
 .crt_effect {
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wcAAwAB/gbKkAAAAABJRU5ErkJggg==') repeat;
-  background-size: 100% 2px;
-  filter: contrast(1.2) brightness(0.9);
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.02) 0px,
+        rgba(255, 255, 255, 0.02) 2px,
+        rgba(0, 0, 0, 0.2) 2px,
+        rgba(0, 0, 0, 0.2) 4px
+    );
+    background-size: 100% 4px;
+    box-shadow:
+        0 0 15px rgba(0, 255, 0, 0.2),
+        inset 0 0 10px rgba(0, 255, 0, 0.1);
+    filter: contrast(1.2) brightness(0.9) saturate(1.1) hue-rotate(2deg);
+    image-rendering: pixelated;
+    animation: crtFlicker 0.1s infinite alternate;
+}
+
+@keyframes crtFlicker {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.98; /* Slight flicker */
+    }
 }
 
 .flicker_delay {
-  animation: flicker 0.2s infinite;
+    animation: flicker 0.2s infinite;
+}
+
+p {
+    background: transparent;
+}
+
+.underscan {
+    padding: 10%;
+}
+
+.underscan-l {
+    padding-left: 20%;
+    padding-top: 3%;
+    padding-right: 30%;
 }
 
 @media only screen and (max-width: 768px) {
-  .header {
-    left: 40px;
-    right: 40px;
-  }
+    .header {
+        left: 40px;
+        right: 40px;
+    }
 
-  .menu_item {
-    padding: 6px;
-    display: flex;
-    font-size: 0.9em;
-    align-items: center;
-    width: 100px;
-  }
+    .menu_item {
+        padding: 6px;
+        display: flex;
+        font-size: 0.9em;
+        align-items: center;
+        width: 100px;
+    }
 
-  .terminal_right {
-    width: 100%;
-    padding-top: 36px;
-  }
+    .terminal_right {
+        width: 100%;
+        padding-top: 36px;
+    }
 
-  .input,
-  .input2,
-  .input3 {
-    width: 100%;
-  }
-
+    .input,
+    .input2,
+    .input3 {
+        width: 100%;
+    }
 }
