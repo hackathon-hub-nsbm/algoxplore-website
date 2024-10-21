@@ -19,6 +19,7 @@ export default function RegistrationForm() {
             }
         } catch (error) {
             window.alert('Sorry, Something went wrong. Please try again later.');
+            console.log(error);
         }
     };
 
