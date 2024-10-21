@@ -23,8 +23,8 @@ export default function RegistrationForm() {
     };
   
     return (
-      <div>
-        <p className="text underscan-l">Register for the AlgoXplore 1.0</p>
+      <div className="border-cover underscan">
+        <p className="text">Register for the AlgoXplore 1.0</p>
         <form
           className="pt-9"
           action="https://docs.google.com/forms/d/e/1FAIpQLScyu_WYhD3NycnjeIXOBh1YROtu8pX9T6Zp0h7ayHS-DJ91VQ/formResponse"
