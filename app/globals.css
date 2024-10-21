@@ -314,6 +314,11 @@ p {
     padding-right: 30%;
 }
 
+.underscan-mid {
+    padding-left: 10%;
+}
+
+
 @media only screen and (max-width: 768px) {
     .header {
         left: 40px;
@@ -338,4 +343,44 @@ p {
     .input3 {
         width: 100%;
     }
+
 }
+
+.art_container {
+    position: absolute; /* Use absolute positioning */
+    bottom: 0; 
+    right: 0; /* Align to the right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; /* Example margin */
+    animation: blink-animation 1s infinite; /* Apply the animation */
+}
+
+/* Define the blink keyframes */
+@keyframes blink-animation {
+    0% { opacity: 1; } /* Fully visible */
+    50% { opacity: 0; } /* Invisible */
+    100% { opacity: 1; } /* Back to fully visible */
+}
+
+
+.countdown {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 10%;
+  }
+  .countdown-text {
+    font-size: 4rem; /* Make the text larger */
+    text-align: center; /* Center text */
+  }
+
+  .border-cover {
+    /* position: absolute; */
+    border: 1px dashed #38ac38; /* Change solid to dotted */
+    /* border-radius: 10px; */
+    z-index: 1;
+}
+
+  
