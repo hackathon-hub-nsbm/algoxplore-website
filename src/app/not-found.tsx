@@ -1,5 +1,5 @@
-import React from 'react';
-import Head from 'next/head';
+import Head from "next/head";
+import React from "react";
 
 export default function Custom404() {
   return (
@@ -7,9 +7,16 @@ export default function Custom404() {
       <Head>
         <title>404 - Page Not Found</title>
       </Head>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
         <pre>
-{`
+          {`
   ┌──────────────────────────────────────────┐
   │           Error: 404 - Not Found        │
   ├──────────────────────────────────────────┤

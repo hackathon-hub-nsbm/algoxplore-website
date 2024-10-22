@@ -6,7 +6,13 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 export default function Home() {
-  const tabs = ["ALGXPLR", "COUNTDOWN", "TIME-LINE", "SPONSORS", "REGISTER"];
+  const tabs: Array<string> = [
+    "ALGXPLR",
+    "COUNTDOWN",
+    "TIME-LINE",
+    "SPONSORS",
+    "REGISTER",
+  ];
   const [activeTab, setActiveTab] = useState("About");
 
   const handleKeyDown = (event: KeyboardEvent) => {
@@ -25,14 +31,14 @@ export default function Home() {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [activeTab]);
+  }, [activeTab, handleKeyDown]);
 
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [activeTab]);
+  }, [activeTab, handleKeyDown]);
 
   useEffect(() => {
     const crtElement = document.querySelector(".crt_effect");
