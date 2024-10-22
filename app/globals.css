@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    cursor: none;
+}
+
 body {
     background: #011a05;
     color: #38ac38;
@@ -9,6 +13,7 @@ body {
     font-weight: 500;
     font-optical-sizing: auto;
     letter-spacing: -0.6px;
+    cursor: none;
 }
 
 *::-webkit-scrollbar {
@@ -44,6 +49,7 @@ body {
 .menu_item {
     padding-left: 6px;
     width: 100px;
+    cursor: none;
 }
 
 .about_image {
@@ -326,6 +332,7 @@ p {
         font-size: 0.9em;
         align-items: center;
         width: 100px;
+        cursor: none;
     }
 
     .terminal_right {
