@@ -1,7 +1,7 @@
-"use client";  
+"use client";
 
-import React, { useEffect } from 'react';
-import Head from 'next/head';
+import Head from "next/head";
+import React, { useEffect } from "react";
 
 export default function Custom404() {
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function Custom404() {
       </Head>
       <div className="crt_effect flex justify-center items-center h-screen bg-black text-green-500">
         <pre className="text">
-{`
+          {`
   ┌───────────────────────────────────────────┐
   │           Error: 404 - Not Found          │
   ├───────────────────────────────────────────┤
