@@ -25,7 +25,7 @@ const CustomCursor: React.FC = () => {
         left: `${position.x}px`,
         top: `${position.y}px`,
         transform: 'translate(-50%, -50%)',
-        backgroundColor: '#ff5555', // Change the cursor color here
+        backgroundColor: '#38ac38ee', // Change the cursor color here
       }}
     />
   );
