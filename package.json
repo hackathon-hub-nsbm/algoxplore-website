@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "check": "biome check ./src",
+    "format": "biome format ./src",
+    "format:write": "biome format --write ./src",
     "prepare": "husky"
   },
   "dependencies": {
