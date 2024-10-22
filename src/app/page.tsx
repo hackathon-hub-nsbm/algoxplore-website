@@ -16,7 +16,6 @@ export default function Home() {
   ];
   const [activeTab, setActiveTab] = useState("ALGXPLR");
 
-  // Handle Keydown logic
   const handleKeyDown = useCallback(
     (event: KeyboardEvent) => {
       const currentIndex = tabs.indexOf(activeTab);
@@ -31,7 +30,6 @@ export default function Home() {
     [activeTab, tabs],
   );
 
-  // Add/remove keydown event listener
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
     return () => {
@@ -39,7 +37,6 @@ export default function Home() {
     };
   }, [handleKeyDown]);
 
-  // CRT effect
   useEffect(() => {
     const crtElement = document.querySelector(".crt_effect");
     if (crtElement) {
@@ -56,10 +53,8 @@ export default function Home() {
 
   return (
     <>
-      {/* Custom cursor */}
       <CustomCursor />
 
-      {/* Main content */}
       <main className="main flex items-center justify-center min-h-screen">
         <div className="overflow-x-hidden overflow-y-scroll terminal crt_effect">
           <Navbar />
