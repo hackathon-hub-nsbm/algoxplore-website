@@ -347,39 +347,36 @@ p {
 }
 
 .art_container {
-    position: absolute; /* Use absolute positioning */
+    position: absolute;
     bottom: 0; 
-    right: 0; /* Align to the right */
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px; /* Example margin */
-    animation: blink-animation 1s infinite; /* Apply the animation */
+    margin: 20px;
+    animation: blink-animation 1s infinite;
 }
 
-/* Define the blink keyframes */
 @keyframes blink-animation {
-    0% { opacity: 1; } /* Fully visible */
-    50% { opacity: 0; } /* Invisible */
-    100% { opacity: 1; } /* Back to fully visible */
+    0% { opacity: 1; } 
+
+    100% { opacity: 0.01; } 
 }
 
 
 .countdown {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
     padding: 10%;
   }
   .countdown-text {
-    font-size: 4rem; /* Make the text larger */
-    text-align: center; /* Center text */
+    font-size: 4rem;
+    text-align: center; 
   }
 
   .border-cover {
-    /* position: absolute; */
-    border: 1px dashed #38ac38; /* Change solid to dotted */
-    /* border-radius: 10px; */
+    border: 1px solid #38ac38;
     z-index: 1;
 }
 

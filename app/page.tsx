@@ -2,11 +2,15 @@
 import About from "@/components/about";
 import Navbar from "@/components/navbar";
 import RegistrationForm from "@/components/registrationForm";
+import Countdown from "@/components/countdown";
+import Art from "@/components/art";
+import TimeLine from "@/components/timeline";
+import Sponsors from "@/components/sponsors";
 import { useState } from "react";
 import { useEffect } from "react";
 
 export default function Home() {
-  const tabs = ["ALGXPLR", "COUNTDOWN", "TIME-LINE", "SPONSORS", "REGISTER"];
+  const tabs = ["ALGXPLR", "ABOUT", "TIME-LINE", "SPONSORS", "REGISTER"];
   const [activeTab, setActiveTab] = useState("About");
 
   const handleKeyDown = (event: KeyboardEvent) => {
@@ -69,12 +73,10 @@ export default function Home() {
           </div>
 
           <div className="ml-auto overflow-y-auto z-50 terminal_right">
-            {activeTab === "ALGXPLR" && <About />}
-
-            {activeTab === "COUNTDOWN" && <div>Menu Content 2</div>}
-            {activeTab === "TIME-LINE" && <div>Menu Content 3</div>}
-            {activeTab === "SPONSERS" && <div>Menu Content 4</div>}
-
+            {activeTab === "ALGXPLR" && <Countdown />}
+            {activeTab === "ABOUT" && <About />}
+            {activeTab === "TIME-LINE" && <TimeLine />}
+            {activeTab === "SPONSORS" && <Sponsors />}
             {activeTab === "REGISTER" && <RegistrationForm />}
           </div>
         </div>
