@@ -1,5 +1,10 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,
@@ -10,7 +15,9 @@
     "attributePosition": "auto",
     "ignore": []
   },
-  "organizeImports": { "enabled": true },
+  "organizeImports": {
+    "enabled": true
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -24,7 +31,10 @@
         "noUnusedVariables": "error",
         "useArrayLiterals": "off"
       },
-      "style": { "noNamespace": "error", "useAsConstAssertion": "error" },
+      "style": {
+        "noNamespace": "error",
+        "useAsConstAssertion": "error"
+      },
       "suspicious": {
         "noExplicitAny": "error",
         "noExtraNonNullAssertion": "error",
@@ -44,9 +54,17 @@
       "bracketSameLine": false
     }
   },
-  "json": { "formatter": { "trailingCommas": "none" } },
+  "json": {
+    "formatter": {
+      "trailingCommas": "none"
+    }
+  },
   "css": {
-    "formatter": { "enabled": true, "indentStyle": "space", "indentWidth": 2 }
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "indentWidth": 2
+    }
   },
   "overrides": [
     {

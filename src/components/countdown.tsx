@@ -15,23 +15,26 @@ export default function Countdown() {
     return () => clearInterval(timer);
   }, [timeLeft]);
 
-  const formatTime = (time) => {
+  const formatTime = (time: number) => {
     const days = Math.floor(time / (24 * 3600));
     const hours = Math.floor((time % (24 * 3600)) / 3600);
     const minutes = Math.floor((time % 3600) / 60);
     const seconds = time % 60;
 
-    return `${String(days).padStart(2, '0')}:${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    return `${String(days).padStart(2, "0")}:${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
   };
 
   return (
     <div className="lg:pr-20 border-cover">
       <Art tab="COUNTDOWN" />
       <div className="countdown">
-        <h1 className="countdown-text text">{timeLeft > 0 ? formatTime(timeLeft) : "00:00:00:00"}</h1>
+        <h1 className="countdown-text text">
+          {timeLeft > 0 ? formatTime(timeLeft) : "00:00:00:00"}
+        </h1>
         <pre className="text">
-            {`ALGOEXPLORE 1.0 |
-COUNTDOWN[demo]`}</pre>
+          {`ALGOEXPLORE 1.0 |
+COUNTDOWN[demo]`}
+        </pre>
       </div>
       <div className="text underscan-mid">
         <pre>{`

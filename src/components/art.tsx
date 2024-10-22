@@ -1,49 +1,49 @@
-export default function Art({ tab }) {
-    return (
-      <div className="lg:pr-20 text">
-        {tab === "ALGXPLR" && (
-          <pre className="text art_container">
-            {`
-                                  ░▒▓█▓▒░ 
-                                  ░▒▓█▓▒░ 
-                                  ░▒▓█▓▒░ 
-                                  ░▒▓█▓▒░ 
-                                  ░▒▓█▓▒░ 
-                                          
-                                  ░▒▓█▓▒░ 
+export default function Art({ tab }: { tab: string }) {
+  return (
+    <div className="lg:pr-20 text">
+      {tab === "ALGXPLR" && (
+        <pre className="text art_container">
+          {`
+                                  ░▒▓█▓▒░
+                                  ░▒▓█▓▒░
+                                  ░▒▓█▓▒░
+                                  ░▒▓█▓▒░
+                                  ░▒▓█▓▒░
+
+                                  ░▒▓█▓▒░
                                   -About-`}
-          </pre>
-        )}
-        
-        {tab === "COUNTDOWN" && (
-          <pre className="text art_container">
-            {`
-   ░▒█████▒░ 
-   ░▒█████▒░ 
+        </pre>
+      )}
+
+      {tab === "COUNTDOWN" && (
+        <pre className="text art_container">
+          {`
+   ░▒█████▒░
+   ░▒█████▒░
      |░░░|
       |░|
      |░░░|
    ░▒█████▒░
    ░▒█████▒░
   -CountDown-`}
-          </pre>
-        )}
-        {tab === "TIMELINE" && (
-          <pre className="text art_container">
-            {`
-   ░▒█████▒░ 
-   ░▒   - ▒░ 
+        </pre>
+      )}
+      {tab === "TIMELINE" && (
+        <pre className="text art_container">
+          {`
+   ░▒█████▒░
+   ░▒   - ▒░
    ░▒ -   ▒░
    ░▒ --  ▒░
    ░▒ - --▒░
    ░▒  -- ▒░
    ░▒█████▒░
   -TimeLine-`}
-          </pre>
-        )}
-        {tab === "SPONSORS" && (
-          <pre className="text art_container">
-            {`
+        </pre>
+      )}
+      {tab === "SPONSORS" && (
+        <pre className="text art_container">
+          {`
   ⠀⠀⠀⠀⠀⠀⣀⣠⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⣴⡿⠋⠉⠉⠻⢿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠹⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -62,9 +62,8 @@ export default function Art({ tab }) {
 ⠀⠀⠘⢿⣿⣦⣤⣴⡿⠻⠿⣷⣦⣤⣤⣤⣴⣾⣿⡿⠿⠿⠿⠟⠛⠉⠀⠀⠀
 ⠀⠀⠀⠀⠉⢉⣉⠉⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
           -Sponsors-`}
-          </pre>
-        )}
-      </div>
-    );
-  }
-  
+        </pre>
+      )}
+    </div>
+  );
+}
