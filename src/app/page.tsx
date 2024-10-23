@@ -1,9 +1,14 @@
 "use client";
+
+import CustomCursor from "@/components/CustomCursor";
 import About from "@/components/about";
+import Art from "@/components/art";
+import Countdown from "@/components/countdown";
 import Navbar from "@/components/navbar";
 import RegistrationForm from "@/components/registrationForm";
-import { useState } from "react";
-import { useEffect } from "react";
+import Sponsors from "@/components/sponsors";
+import TimeLine from "@/components/timeline";
+import { useCallback, useEffect, useState } from "react";
 
 export default function Home() {
   const tabs: Array<string> = [
@@ -15,30 +20,26 @@ export default function Home() {
   ];
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
-  const handleKeyDown = (event: KeyboardEvent) => {
-    const currentIndex = tabs.indexOf(activeTab);
-    if (event.key === "ArrowDown") {
-      const nextIndex = (currentIndex + 1) % tabs.length;
-      setActiveTab(tabs[nextIndex]);
-    } else if (event.key === "ArrowUp") {
-      const prevIndex = (currentIndex - 1 + tabs.length) % tabs.length;
-      setActiveTab(tabs[prevIndex]);
-    }
-  };
+  const handleKeyDown = useCallback(
+    (event: KeyboardEvent) => {
+      const currentIndex = tabs.indexOf(activeTab);
+      if (event.key === "ArrowDown") {
+        const nextIndex = (currentIndex + 1) % tabs.length;
+        setActiveTab(tabs[nextIndex]);
+      } else if (event.key === "ArrowUp") {
+        const prevIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+        setActiveTab(tabs[prevIndex]);
+      }
+    },
+    [activeTab, tabs],
+  );
 
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [activeTab, handleKeyDown]);
-
-  useEffect(() => {
-    window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [activeTab, handleKeyDown]);
+  }, [handleKeyDown]);
 
   useEffect(() => {
     const crtElement = document.querySelector(".crt_effect");
@@ -60,13 +61,15 @@ export default function Home() {
         <Navbar />
 
         <div className="flex flex-col justify-between items-center lg:flex-row lg:items-start terminal_data">
-          <div className=" w-full pt-9 lg:fixed lg:pt-0 lg:w-2/4">
+          <div className="w-full pt-9 lg:fixed lg:pt-0 lg:w-2/4">
             <div className="flex gap-2 justify-center items-center lg:flex-col lg:items-start">
               {tabs.map((tab) => (
                 <div
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`cursor-pointer menu_item ${activeTab === tab ? "bg-[#38ac38] text-black" : ""}`}
+                  className={`cursor-pointer menu_item ${
+                    activeTab === tab ? "bg-[#38ac38] text-black" : ""
+                  }`}
                 >
                   {tab}
                 </div>
