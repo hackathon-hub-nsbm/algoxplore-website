@@ -1,8 +1,6 @@
 "use client";
-
 import CustomCursor from "@/components/CustomCursor";
 import About from "@/components/about";
-import Art from "@/components/art";
 import Countdown from "@/components/countdown";
 import Navbar from "@/components/navbar";
 import RegistrationForm from "@/components/registrationForm";
