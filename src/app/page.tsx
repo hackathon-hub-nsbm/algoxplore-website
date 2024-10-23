@@ -1,18 +1,20 @@
 "use client";
-
 import CustomCursor from "@/components/CustomCursor";
 import About from "@/components/about";
+import Countdown from "@/components/countdown";
 import Navbar from "@/components/navbar";
 import RegistrationForm from "@/components/registrationForm";
+import Sponsors from "@/components/sponsors";
+import TimeLine from "@/components/timeline";
 import { useCallback, useEffect, useState } from "react";
 
 export default function Home() {
   const tabs: Array<string> = [
     "ALGXPLR",
-    "COUNTDOWN",
+    "REGISTER",
     "TIME-LINE",
     "SPONSORS",
-    "REGISTER",
+    "ABOUT",
   ];
   const [activeTab, setActiveTab] = useState("ALGXPLR");
 
@@ -77,10 +79,10 @@ export default function Home() {
             </div>
 
             <div className="ml-auto overflow-y-auto z-50 terminal_right">
-              {activeTab === "ALGXPLR" && <About />}
-              {activeTab === "COUNTDOWN" && <div>Menu Content 2</div>}
-              {activeTab === "TIME-LINE" && <div>Menu Content 3</div>}
-              {activeTab === "SPONSORS" && <div>Menu Content 4</div>}
+              {activeTab === "ALGXPLR" && <Countdown />}
+              {activeTab === "ABOUT" && <About />}
+              {activeTab === "TIME-LINE" && <TimeLine />}
+              {activeTab === "SPONSORS" && <Sponsors />}
               {activeTab === "REGISTER" && <RegistrationForm />}
             </div>
           </div>
