@@ -7,13 +7,13 @@ import { useEffect } from "react";
 
 export default function Home() {
   const tabs: Array<string> = [
-    "ALGXPLR",
-    "COUNTDOWN",
-    "TIME-LINE",
+    "ALGXPLOR",
+    "TIMELINE",
+    "REGISTERATION",
     "SPONSORS",
-    "REGISTER",
+    "ABOUT_US",
   ];
-  const [activeTab, setActiveTab] = useState("About");
+  const [activeTab, setActiveTab] = useState(tabs[0]);
 
   const handleKeyDown = (event: KeyboardEvent) => {
     const currentIndex = tabs.indexOf(activeTab);
@@ -56,7 +56,7 @@ export default function Home() {
 
   return (
     <main className="main flex items-center justify-center min-h-screen">
-      <div className="overflow-x-hidden overflow-y-scroll terminal crt_effect">
+      <div className="terminal crt_effect">
         <Navbar />
 
         <div className="flex flex-col justify-between items-center lg:flex-row lg:items-start terminal_data">
@@ -74,14 +74,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="ml-auto overflow-y-auto z-50 terminal_right">
-            {activeTab === "ALGXPLR" && <About />}
-
-            {activeTab === "COUNTDOWN" && <div>Menu Content 2</div>}
-            {activeTab === "TIME-LINE" && <div>Menu Content 3</div>}
+          <div className="lg:ml-[20rem] z-50 terminal_right">
+            {activeTab === "ALGXPLOR" && <About />}
+            {activeTab === "TIMELINE" && <div>Menu Content 2</div>}
+            {activeTab === "REGISTERATION" && <RegistrationForm />}
             {activeTab === "SPONSERS" && <div>Menu Content 4</div>}
-
-            {activeTab === "REGISTER" && <RegistrationForm />}
+            {activeTab === "ABOUT US" && <div>Menu Content 5</div>}
           </div>
         </div>
       </div>

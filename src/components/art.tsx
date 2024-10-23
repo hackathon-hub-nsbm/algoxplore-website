@@ -1,6 +1,6 @@
 export default function Art({ tab }: { tab: string }) {
   return (
-    <div className="lg:pr-20 text">
+    <div className="lg:pr-20 hidden lg:block text">
       {tab === "ALGXPLR" && (
         <pre className="text art_container">
           {`

@@ -366,10 +366,6 @@ p {
   align-items: center; /* Center vertically */
   padding: 10%;
 }
-.countdown-text {
-  font-size: 4rem; /* Make the text larger */
-  text-align: center; /* Center text */
-}
 
 .border-cover {
   /* position: absolute; */
