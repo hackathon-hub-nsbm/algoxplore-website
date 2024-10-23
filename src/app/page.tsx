@@ -58,7 +58,6 @@ export default function Home() {
       <main className="main flex items-center justify-center min-h-screen">
         <div className="terminal crt_effect">
           <Navbar />
-
           <div className="flex flex-col justify-between items-center lg:flex-row lg:items-start terminal_data">
             <div className="w-full pt-9 lg:fixed lg:pt-0 lg:w-2/4">
               <div className="flex gap-2 justify-center items-center lg:flex-col lg:items-start">
