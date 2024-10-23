@@ -19,11 +19,6 @@ body {
   display: none; /* Safari and Chrome */
 }
 
-.main {
-  min-height: 100vh;
-  max-height: 100vh;
-}
-
 .terminal {
   padding: 30px;
   padding-top: 20px;
@@ -367,7 +362,6 @@ p {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  padding: 10%;
 }
 
 .border-cover {

@@ -1,6 +1,6 @@
 "use client";
 import CustomCursor from "@/components/CustomCursor";
-import About from "@/components/about";
+import About from "@/components/hero-section";
 import Navbar from "@/components/navbar";
 import RegistrationForm from "@/components/registrationForm";
 import Sponsors from "@/components/sponsors";
@@ -75,7 +75,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lg:ml-[20rem] z-50 terminal_right">
+            <div className="lg:ml-[14rem] xl:ml-[20rem] z-50">
               {activeTab === "ALGXPLOR" && <About />}
               {activeTab === "TIMELINE" && <TimeLine />}
               {activeTab === "REGISTERATION" && <RegistrationForm />}
