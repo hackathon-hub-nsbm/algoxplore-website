@@ -357,12 +357,9 @@ p {
 @keyframes blink-animation {
   0% {
     opacity: 1;
-  } /* Fully visible */
-  50% {
-    opacity: 0;
-  } /* Invisible */
+  }
   100% {
-    opacity: 1;
+    opacity: 0;
   } /* Back to fully visible */
 }
 
