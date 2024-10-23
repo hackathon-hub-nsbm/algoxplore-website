@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Art from "./art";
 
 export default function Countdown() {
   const targetDate = new Date("2024-10-31T23:59:59"); // Set your target date and time here
