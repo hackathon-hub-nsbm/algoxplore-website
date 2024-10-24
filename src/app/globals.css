@@ -16,7 +16,8 @@ body {
 }
 
 *::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  display: none;
+  /* Safari and Chrome */
 }
 
 .main {
@@ -47,7 +48,7 @@ body {
 
 .menu_item {
   padding-left: 6px;
-  width: 100px;
+  width: 150px;
   cursor: none;
 }
 
@@ -288,8 +289,10 @@ body {
   0% {
     opacity: 1;
   }
+
   100% {
-    opacity: 0.98; /* Slight flicker */
+    opacity: 0.98;
+    /* Slight flicker */
   }
 }
 
@@ -343,14 +346,18 @@ p {
 }
 
 .art_container {
-  position: absolute; /* Use absolute positioning */
+  position: absolute;
+  /* Use absolute positioning */
   bottom: 0;
-  right: 0; /* Align to the right */
+  right: 0;
+  /* Align to the right */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px; /* Example margin */
-  animation: blink-animation 1s infinite; /* Apply the animation */
+  margin: 20px;
+  /* Example margin */
+  animation: blink-animation 1s infinite;
+  /* Apply the animation */
 }
 
 /* Define the blink keyframes */
@@ -358,25 +365,34 @@ p {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
-  } /* Back to fully visible */
+  }
+
+  /* Back to fully visible */
 }
 
 .countdown {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
   padding: 10%;
 }
+
 .countdown-text {
-  font-size: 4rem; /* Make the text larger */
-  text-align: center; /* Center text */
+  font-size: 4rem;
+  /* Make the text larger */
+  text-align: center;
+  /* Center text */
 }
 
 .border-cover {
   /* position: absolute; */
-  border: 1px dashed #38ac38; /* Change solid to dotted */
+  border: 1px dashed #38ac38;
+  /* Change solid to dotted */
   /* border-radius: 10px; */
   z-index: 1;
 }

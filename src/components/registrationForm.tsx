@@ -77,13 +77,13 @@ export default function RegistrationForm() {
             <label htmlFor="foodPreference">
               Food Preference <span className="text-xs">(Veg or Non-veg)</span>
             </label>
-            <input
-              className="input3 mt-1"
-              type="text"
-              name="entry.1489052153"
-              placeholder="Veg or Non-Veg"
-              required
-            />
+            <select className="input3 mt-1" name="entry.1489052153" required>
+              <option value="" disabled selected>
+                Select your option
+              </option>
+              <option value="Veg">Veg</option>
+              <option value="Non-Veg">Non-Veg</option>
+            </select>
           </div>
         </div>
         <div className="flex flex-col pt-6 lg:pt-9">
