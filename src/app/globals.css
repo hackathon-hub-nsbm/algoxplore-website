@@ -21,8 +21,8 @@ body {
 
 .terminal {
   padding: 30px;
-  padding-top: 20px;
-  height: 93vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 96vw;
   border: 1px #38ac38 dashed;
 }
