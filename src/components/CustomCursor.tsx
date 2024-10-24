@@ -17,8 +17,9 @@ const CustomCursor: React.FC = () => {
 
   return (
     <div
-      className="fixed pointer-events-none z-50 w-3 h-5 bg-white"
+      className="fixed pointer-events-none z-50 w-3 h-5"
       style={{
+        backgroundColor: "#00e500",
         left: `${position.x}px`,
         top: `${position.y}px`,
         transform: "translate(-50%, -50%)",
