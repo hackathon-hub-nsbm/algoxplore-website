@@ -78,7 +78,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full flex justify-center pt-5 lg:hidden lg:pt-0 lg:w-2/4">
+            <div className="w-full pt-5 lg:hidden lg:pt-0 lg:w-2/4">
               <div className="lg:hidden">
                 <select
                   value={activeTab}
