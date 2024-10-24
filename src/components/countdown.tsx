@@ -1,19 +1,24 @@
 import React, { useState, useEffect } from "react";
-import Art from "./art";
 
 export default function Countdown() {
-  const totalTimeInSeconds = 10000; // Set your countdown time in seconds
-  const [timeLeft, setTimeLeft] = useState(totalTimeInSeconds);
+  const targetDate = new Date("2024-10-31T23:59:59");
+  const [timeLeft, setTimeLeft] = useState(0);
 
   useEffect(() => {
-    if (timeLeft <= 0) return;
+    const calculateTimeLeft = () => {
+      const now = new Date();
+      const difference = targetDate.getTime() - now.getTime();
+      setTimeLeft(Math.max(0, Math.floor(difference / 1000)));
+    };
+
+    calculateTimeLeft();
 
     const timer = setInterval(() => {
-      setTimeLeft((prevTime) => prevTime - 1);
+      calculateTimeLeft();
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [timeLeft]);
+  }, [targetDate]);
 
   const formatTime = (time: number) => {
     const days = Math.floor(time / (24 * 3600));
@@ -21,32 +26,30 @@ export default function Countdown() {
     const minutes = Math.floor((time % 3600) / 60);
     const seconds = time % 60;
 
-    return `${String(days).padStart(2, "0")}:${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+    return (
+      <div className="text-center">
+        <div>
+          <span>{String(days).padStart(2, "0")}</span>:
+          <span>{String(hours).padStart(2, "0")}</span>:
+          <span>{String(minutes).padStart(2, "0")}</span>:
+          <span>{String(seconds).padStart(2, "0")}</span>
+        </div>
+      </div>
+    );
   };
 
   return (
-    <div className="lg:pr-20 border-cover">
-      <Art tab="COUNTDOWN" />
-      <div className="countdown">
-        <h1 className="countdown-text text">
+    <div className="">
+      <div className="countdown mt-20">
+        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-semibold text">
           {timeLeft > 0 ? formatTime(timeLeft) : "00:00:00:00"}
         </h1>
-        <pre className="text">
-          {`ALGOEXPLORE 1.0 |
-COUNTDOWN[demo]`}
-        </pre>
       </div>
-      <div className="text underscan-mid">
-        <pre>{`
-~$ cat details.txt
-Powered By : HackathonHub-NSBM
-// Prepare for a Whole New Adventure !
-
-~$ ./init_Navigation
-Navigation Initialized
-
->>> Press ↓ to continue
-        `}</pre>
+      <div className="text flex flex-row justify-center gap-x-12 text-lg sm:text-2xl sm:gap-x-20 lg:text-3xl lg:gap-x-28 mt-1 lg:mt-2 mb-20">
+        <span>DAYS</span>
+        <span>HRS</span>
+        <span>MIN</span>
+        <span>SEC</span>
       </div>
     </div>
   );

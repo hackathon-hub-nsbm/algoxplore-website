@@ -19,15 +19,10 @@ body {
   display: none; /* Safari and Chrome */
 }
 
-.main {
-  min-height: 100vh;
-  max-height: 100vh;
-}
-
 .terminal {
   padding: 30px;
-  padding-top: 20px;
-  height: 93vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 96vw;
   border: 1px #38ac38 dashed;
 }
@@ -367,11 +362,6 @@ p {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  padding: 10%;
-}
-.countdown-text {
-  font-size: 4rem; /* Make the text larger */
-  text-align: center; /* Center text */
 }
 
 .border-cover {

@@ -1,6 +1,6 @@
 export default function Art({ tab }: { tab: string }) {
   return (
-    <div className="lg:pr-20 text">
+    <div className="lg:pr-20 mt-40 hidden lg:block text">
       {tab === "ALGXPLR" && (
         <pre className="text art_container">
           {`
@@ -11,7 +11,7 @@ export default function Art({ tab }: { tab: string }) {
                                   ░▒▓█▓▒░
 
                                   ░▒▓█▓▒░
-                                  -About-`}
+                                -ALGOXPLORE-`}
         </pre>
       )}
 
